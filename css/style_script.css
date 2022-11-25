@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #0652dd;
+  --secondary-color: #ea2027;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+ul li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    color: var(--secondary-color);
+}
+.fist{
+    color: var(--secondary-color);
+}
+.jab{
+    color: var(--primary-color);
+}
+.tv{
+    color: var(--secondary-color);
+}
+nav {
+    background: rgb(2, 165, 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index:1;
+}
+.logo{
+    font-size: 1rem;
+    font-weight: 500;
+}
+ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    margin-left: 2rem;
+}
+.nav-link{
+    font-weight: var(--bold-font);
+    
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+    max-width: 1100px;
+    margin: 2rem auto -6rem;
+}
+.intro-text h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.intro-text h3{
+    margin-bottom: 0.5rem;
+}
+.hero p{
+    line-height: var(--line-height);
+    color:#1c2727;
+}
+.hear{
+    color:rgb(6, 168, 114);
+}
+.connecting{
+    color: var(--secondary-color);
+}
+.btn {
+    margin-top: 1rem;
+    display:inline-block;
+    padding: 0.8rem 1.0rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+.red{
+    background-color: var(--secondary-color);
+    margin-right: 1.5rem;
+}
+.red:hover{
+    background-color: #f1262d;
+    color: #fff;
+}
+.blue{
+    background-color: var( --primary-color);
+}
+.blue:hover{
+    background-color: #095cf7;
+    color: #fff;
+}
+.about{
+    position:relative;
+    background-image: url('../img/jab.png');
+    background-size: 1250px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.about h1{
+    position:relative;
+    top: -170px;
+    left: -560px;
+    color: red;
+    font-size:2em;
+}
+.about p{
+    font-size:1em;
+    text-shadow: 1px 1px 1px #333;
+}
+.about h3{
+    font-size: 3em;
+    margin-bottom: -20px;
+    color: #5a6986;
+    background-image: url('img/jab.png');
+}
+.stars-gallery{
+    display:flex;
+    flex-direction:column;
+}
+.stars-gallery img, .stars-gallery a{
+    width:50%;
+    height:40%;
+    position:relative;
+    left: 10px;
+}
+.ant{
+    font-weight: 100;
+    font-size:medium;
+    position: relative;
+    left: 400px;
+    top: -450px;
+}
+.fury{
+    font-weight: 100;
+    font-size: medium;
+    position:relative;
+    left:400px;
+    top: -220px;
+}
+.tyson{
+    font-weight: 100;
+    font-size: medium;
+    position:relative;
+    left: 400px;
+    top:-410px;
+
+}
+.muh{
+    font-weight: 100;
+    font-size: medium;
+    position:relative;
+    left:400px;
+    top: -245px;
+}
+.wilder{
+    font-weight: 100;
+    font-size:medium;
+    position: relative;
+    left: 400px;
+    top: -220px;
+}
+.george{
+    font-weight: 100;
+    font-size: medium;
+    position: relative;
+    left: 400px;
+    top: -200px;
+}
+.people{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    padding: 1rem 0;
+}
+.stakeholders{
+    max-width: 1100px;
+}
+.stakeholders img{
+    border-radius: 1.0rem;
+}
+.persons{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap:2rem;
+}
+.person-2 img{
+    border-radius: 1.0rem;
+}
+.name, .role{
+    font-weight: 100;
+    text-align: center;
+}
+.sub{
+    text-align: center;
+    margin-top: 80px;
+}
+.email-sub{
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+.social h3{
+    font-size: medium;
+    font-weight: 100;
+    text-align: center;
+}
+.socialicons{
+    text-align: center;
+    font-size: 1.3rem;
+}
+footer{
+    border-top: 1px solid #f1f1f1;
+    box-shadow:rgb(2, 165, 2);
+    text-align: center;
+    padding:2rem;
+}
+
+/* Dark theme starts*/
+
+/* Dark theme ends */
+
+/* Navbar starts */
+
+/* Dark theme */
+
+/* Dark theme ends */
+/* Navbar ends */
+
+/* Hero section starts */
+
+/* Hero section ends */
+
+/* About section start*/
+
+/* About section ends */
+
+/* Image gallery starts */
+
+/* Image gallery ends */
+
+/* Stakeholders start */
+/* Stakeholders ends */
+
+/* Scroll to top button starts */
+
+/* Scroll to top button ends */
+
+/* Subscription form starts */
+
+/* Subscription form ends */
+
+/* Social icons */
+
+/* Footer */
+
+/* Media Query */
